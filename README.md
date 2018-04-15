@@ -19,10 +19,14 @@ This is an example project to showcase the automated installation of a Liferay d
 9. Tomcat is installed at /opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42/
 10. Para ver que ha arrancado tomcat correctamente ejecutamos este comando:
 
-/opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42> tail -f logs/catalina.out
-tail -f /opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42/logs/catalina.out -n 10000
+Podemos ir a ver los logs del tomcat, de dos maneras
+10.1. cd /opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42
+tail -f logs/catalina.out -n 10000
 
-y tenemos que ver el tiempo que ha tardado en arrancarse en la última línea:INFO: Server startup in 710151 ms
+10.2. tail -f /opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42/logs/catalina.out -n 10000
+
+Entonces tenemos que ver el tiempo que ha tardado en arrancarse en la última línea:
+INFO: Server startup in 710151 ms
 
 Apr 14, 2018 10:27:07 AM org.apache.catalina.startup.HostConfig deployDirectory
 INFO: Deploying web application directory /opt/liferay/liferay-portal-7.0-ce-m4/tomcat-7.0.42/webapps/kaleo-web
@@ -37,10 +41,11 @@ INFO: Server startup in 710151 ms
 
 CTRL + C --> para salir del comando tail
 
-También podemos ejecutar los comandos wget y curl
+11. También podemos ejecutar los comandos wget y curl
  wget http://localhost:8080 --> devuelve 200 ok index.html saved
  curl http://localhost:8080 --> muestra el html de la página index.html
 
+12. He modificado la memoria RAM, el número de microprocesadores y máquina base
 
 ## Content
 
