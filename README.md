@@ -1,4 +1,4 @@
-# Liferay 7 development environment
+# Liferay 6.2 development environment
 
 Based on: <https://github.com/mimacom/liferay-puppet-deployment>
 
@@ -47,6 +47,10 @@ CTRL + C --> para salir del comando tail
 
 12. He modificado la memoria RAM, el número de microprocesadores y máquina base
 
+13. Vigilar al arrancar, porque a veces se queda en un bucle infinito cuando
+creamos el usuario test. Para arreglarlo:
+-Reseteamos el tomcat
+-Quitar sample data
 ## Content
 
 This project will install the following artifacts on a Ubuntu 12.04 box:
