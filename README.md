@@ -11,7 +11,8 @@ This is an example project to showcase the automated installation of a Liferay d
 1. Clone this project.
 2. Install VirtualBox: <https://www.virtualbox.org>
 3. Install Vagrant: <http://www.vagrantup.com>
-4. Change into the directory where this project was cloned.
+4. Change into the directory where this project was cloned. All puppet configuration are in modules & manifests folder.
+   In base.pp file we load java, mysql & liferay.
 5. Enter 'vagrant up'.
 6. After all puppet modules are finished the fresh installed Liferay portal is available at: <http://localhost:4040>
 7. To access your ubuntu box from the command line, type "vagrant ssh"
